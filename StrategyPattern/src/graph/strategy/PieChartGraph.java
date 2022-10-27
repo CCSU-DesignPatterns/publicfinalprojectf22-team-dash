@@ -10,6 +10,10 @@ import org.jfree.chart.labels.StandardPieSectionLabelGenerator;
 import org.jfree.chart.plot.PiePlot;
 import org.jfree.data.general.DefaultPieDataset;
 
+/**
+* Strategy for drawing a pie chart
+* @author Steven Walker
+*/
 public class PieChartGraph implements GraphStrategy {
 
 	@Override

@@ -13,6 +13,11 @@ import org.jfree.data.xy.XYSeriesCollection;
 import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RectangleInsets;
 
+/**
+ * Constructs the Application Frame used for the Line Graph. Code was referenced from the JFreeChart demo library and manipulated for use in this project.
+ * @author Steven Walker
+ *
+ */
 public class LineGraphConstructor extends ApplicationFrame {
 
 	/**

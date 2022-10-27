@@ -1,5 +1,14 @@
 # Data Graphing - Strategy Pattern
 
+## Before use:
+
+You must add the library files associated with JFreeChart. 
+	1. Right click on the project folder in the project explorer
+	2. Select "Properties"
+	3. Under "Libraries" Tab, click on "Classpath"
+	4. On the right side of the window, click "Add External JARs..."
+	5. Add all .jar files in the /jar folder
+
 ## Sample use:
 
 ### Create a Pie Chart

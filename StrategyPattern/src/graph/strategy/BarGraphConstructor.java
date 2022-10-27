@@ -7,6 +7,11 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.ui.ApplicationFrame;
 
+/**
+ * Constructs the Application Frame used for the Bar Graph. Code was referenced from the JFreeChart demo library and manipulated for use in this project.
+ * @author Steven Walker
+ *
+ */
 public class BarGraphConstructor extends ApplicationFrame {
 
 	/**
