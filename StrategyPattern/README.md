@@ -1,7 +1,4 @@
-# publicfinalprojectf22-team-dash
-
-## First Pattern Available For Use:
-## Data Graphing - Strategy Pattern
+# Data Graphing - Strategy Pattern
 
 ## Before use:
 
