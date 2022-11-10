@@ -16,7 +16,7 @@ package graph.strategy;
  *
  */
 public class GraphProfile {
-	protected String title;
+	public String title;
 	protected String[] rowTitles;
 	protected String[] columnTitles;
 	protected String[] categoryTitles;
@@ -25,16 +25,14 @@ public class GraphProfile {
 	protected int[][][] threeDimData;
 	protected String xAxisTitle;
 	protected String yAxisTitle;
-	protected boolean showLabels;
 	
 	/**
 	* Constructor for GraphProfile with arguments to support a pie chart
 	*/
-	public GraphProfile(String title, String[] titles, int[] data, boolean showLabels) {
+	public GraphProfile(String title, String[] titles, int[] data) {
 		this.title = title;
 		this.categoryTitles = titles;
 		this.oneDimData = data;
-		this.showLabels = showLabels;
 	}
 	
 	/**
@@ -59,4 +57,82 @@ public class GraphProfile {
 		this.xAxisTitle = xAxisTitle;
 		this.yAxisTitle = yAxisTitle;
 	}
+	
+	public GraphProfile() {
+		this.title = null;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String[] getRowTitles() {
+		return rowTitles;
+	}
+
+	public void setRowTitles(String[] rowTitles) {
+		this.rowTitles = rowTitles;
+	}
+
+	public String[] getColumnTitles() {
+		return columnTitles;
+	}
+
+	public void setColumnTitles(String[] columnTitles) {
+		this.columnTitles = columnTitles;
+	}
+
+	public String[] getCategoryTitles() {
+		return categoryTitles;
+	}
+
+	public void setCategoryTitles(String[] categoryTitles) {
+		this.categoryTitles = categoryTitles;
+	}
+
+	public int[] getOneDimData() {
+		return oneDimData;
+	}
+
+	public void setOneDimData(int[] oneDimData) {
+		this.oneDimData = oneDimData;
+	}
+
+	public int[][] getTwoDimData() {
+		return twoDimData;
+	}
+
+	public void setTwoDimData(int[][] twoDimData) {
+		this.twoDimData = twoDimData;
+	}
+
+	public int[][][] getThreeDimData() {
+		return threeDimData;
+	}
+
+	public void setThreeDimData(int[][][] threeDimData) {
+		this.threeDimData = threeDimData;
+	}
+
+	public String getxAxisTitle() {
+		return xAxisTitle;
+	}
+
+	public void setxAxisTitle(String xAxisTitle) {
+		this.xAxisTitle = xAxisTitle;
+	}
+
+	public String getyAxisTitle() {
+		return yAxisTitle;
+	}
+
+	public void setyAxisTitle(String yAxisTitle) {
+		this.yAxisTitle = yAxisTitle;
+	}
+	
+	
 }
