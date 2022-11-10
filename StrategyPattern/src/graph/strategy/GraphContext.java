@@ -1,5 +1,7 @@
 package graph.strategy;
 
+import javafx.scene.chart.*;
+
 /**
  * Context class used for implementation of Strategy Pattern
  * @param name The name of the account. Checking and Savings indicated here for BankAccount class.
@@ -13,7 +15,7 @@ public class GraphContext {
 		this.strategy = strategy;
 	}
 	
-	public void executeStrategy(GraphProfile profile){
-		strategy.createGraph(profile);
+	public Chart executeStrategy(GraphProfile profile){
+		return(strategy.createGraph(profile));
 	}
 }
