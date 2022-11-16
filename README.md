@@ -1,7 +1,7 @@
 # publicfinalprojectf22-team-dash
 
 ## Dashboard
-
+![alt text](https://github.com/CCSU-DesignPatterns/publicfinalprojectf22-team-dash/blob/main/StrategyPattern/img/myccsu.png?raw=true)
 ## Before use:
 
 You must add the library files associated with JavaFX. 
