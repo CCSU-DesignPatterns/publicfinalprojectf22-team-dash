@@ -66,7 +66,7 @@ Chart lineChart = lineContext.executeStrategy(newLineProfile);
 ```
 ### Add a Photo
 ```
-Image image = new Image(new FileInputStream("F:\\School\\Grad\\1_Fall_2022\\505_Design_Patterns\\FinalProjectGIT\\PRIVATE\\privatefinalprojectf22-team-dash\\StrategyPattern\\img\\myccsu.png"));
+Image image = new Image(new FileInputStream("<FILEPATH>.png"));
 ImageView imageView = new ImageView(image);
 ```
 ### Create the Dashboard
