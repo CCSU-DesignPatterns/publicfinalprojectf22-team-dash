@@ -96,15 +96,6 @@ public class Main extends Application{
 		Image image = new Image(new FileInputStream("F:\\School\\Grad\\1_Fall_2022\\505_Design_Patterns\\FinalProjectGIT\\PRIVATE\\privatefinalprojectf22-team-dash\\StrategyPattern\\img\\myccsu.png"));
 		ImageView imageView = new ImageView(image);
 		
-		HttpRequest request = HttpRequest.newBuilder()
-				.uri(URI.create("https://open-weather13.p.rapidapi.com/city/Hartford"))
-				.header("X-RapidAPI-Key", "3b6639b20cmshbba4d2f9955ed5ep148124jsnbb59ac3b541f")
-				.header("X-RapidAPI-Host", "open-weather13.p.rapidapi.com")
-				.method("GET", HttpRequest.BodyPublishers.noBody())
-				.build();
-		HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
-		System.out.println(response.body());
-		
 		HBox hbox = new HBox();
 		hbox.setSpacing(10);
 		hbox.setMargin(pieChart, new Insets(20,20,20,20));
