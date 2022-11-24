@@ -1,7 +1,6 @@
-# publicfinalprojectf22-team-dash
+# Team Dash - Build a dashboard out of your data
 
-## First Pattern Available For Use:
-## Data Graphing - Strategy Pattern
+![alt text](https://github.com/CCSU-DesignPatterns/publicfinalprojectf22-team-dash/blob/6b1d8e51648ffa957bd8eb6ca99cb70ac9a0dcca/img/DashEx.png?raw=true)
 
 ## Before use:
 
