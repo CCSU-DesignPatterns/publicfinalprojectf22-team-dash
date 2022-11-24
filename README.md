@@ -1,4 +1,18 @@
-# Data Graphing - Strategy Pattern
+# publicfinalprojectf22-team-dash
+
+## First Pattern Available For Use:
+## Data Graphing - Strategy Pattern
+
+## Before use:
+
+You must add the library files associated with JavaFX. 
+	1. Right click on the project folder in the project explorer
+	2. Select "Properties"
+	3. Under "Libraries" Tab, click on "Modulepath"
+	4. On the right side of the window, click "Add External JARs..."
+	5. Add all .jar files in the /jar folder
+	6. Update the run configuration to include the following in VM Arguments. Note the path needs to be updated:
+		--module-path path\to\your\jars\folder --add-modules javafx.controls,javafx.fxml
 
 ## Sample use:
 
