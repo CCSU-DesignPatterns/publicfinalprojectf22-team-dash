@@ -4,18 +4,21 @@
 
 ## Before use:
 
-You must add the library files associated with JavaFX. 
-	1. Right click on the project folder in the project explorer
-	2. Select "Properties"
-	3. Under "Libraries" Tab, click on "Modulepath"
-	4. On the right side of the window, click "Add External JARs..."
-	5. Add all .jar files in the /jar folder
-	6. Update the run configuration to include the following in VM Arguments. Note the path needs to be updated:
+### You must add the library files associated with JavaFX. 
+	1. In Eclipse, right click on the project folder in the project explorer 
+	2. Select "Properties" 
+	3. Under "Libraries" Tab, click on "Modulepath" 
+	4. On the right side of the window, click "Add External JARs..." 
+	5. Add all .jar files in the /jar folder 
+	6. Update the run configuration to include the following in VM Arguments. Note the path needs to be updated: 
 		--module-path path\to\your\jars\folder --add-modules javafx.controls,javafx.fxml
+		
+	If you're having trouble, there are many web tutorials to help you get JavaFX working. Here's one I found helpful:
+		https://stackoverflow.com/questions/33819052/how-do-i-import-javafx-into-eclipse
 
 ## Sample use:
 
-'''
+```
 import java.io.IOException;
 import graph.strategy.GraphProfile;
 import javafx.application.Application;
@@ -30,7 +33,9 @@ public class Main extends Application{
 
 	@Override
 	public void start(Stage stage) throws IOException, InterruptedException {
-		//Create a Pie Chart Profile
+```
+### Create a Pie Chart Profile
+```
 		String pieTitle = "Activities";
 		String[] categories = {"Sleeping", "School", "Playing", "TV", "Music"};
 		int[] data = {5,4,2,2,1};
@@ -38,8 +43,9 @@ public class Main extends Application{
 				pieTitle, 
 				categories, 
 				data);
-		
-		//Create a Bar Chart Profile
+```
+### Create a Bar Chart Profile
+```
 		String barTitle = "Hours Teachers Spend Teaching";
 		String[] pieRowTitles = {"Primary", "Lower Secondary", "Upper Secondary"};
 		String[] columnTitles = {"Japan", "Spain", "Iceland", "USA"};
@@ -53,13 +59,14 @@ public class Main extends Application{
 				twoDimData, 
 				barXAxisTitle, 
 				barYAxisTitle);
-		
-		//Create a Line Chart Profile
+```
+### Create a Line Chart Profile
+```
 		String lineTitle = "Example Line Graph";
 		String[] lineRowTitles = {"Data 1", "Data 2", "Data 3"};
 		int [][][] threeDimData = {{{1,1},{2,4},{3,3},{4,5},{5,5},{6,7},{7,7},{8,8}},
-									{{1,5},{2,7},{3,6},{4,8},{5,4},{6,4},{7,2},{8,1}},
-									{{3,4},{4,3},{5,2},{6,3},{7,6},{8,3},{9,4},{10,3}}};
+					{{1,5},{2,7},{3,6},{4,8},{5,4},{6,4},{7,2},{8,1}},
+					{{3,4},{4,3},{5,2},{6,3},{7,6},{8,3},{9,4},{10,3}}};
 		String lineXAxisTitle = "X Axis Values";
 		String lineYAxisTitle = "Y Axis Values";
 		GraphProfile lineProfile = new GraphProfile(
@@ -68,23 +75,28 @@ public class Main extends Application{
 				threeDimData, 
 				lineXAxisTitle, 
 				lineYAxisTitle);
-		
+```
+### Add a Photo (optional)
+```
 		//Select a path to a photo for the title bar, or set imagePath to "None"
 		String imagePath = "F:\\School\\Grad\\1_Fall_2022\\505_Design_Patterns\\FinalProjectGIT\\"
 				+ "PRIVATE\\privatefinalprojectf22-team-dash\\img\\myccsu.png";
 		//String imagePath = "None";
-		
+```
+### Gather all the elements together, starting with the title and imagePath
+```
 		//Setup a list of calls to add elements of the Dashboard. Add Title First. Charts will be drawn in order
 		HBox[] elementQueue = {	driver.Domain.createTitle("Dashboard Team", imagePath),
-								driver.Domain.addPieChart(pieProfile),
+					driver.Domain.addPieChart(pieProfile),
 		                       	driver.Domain.addBarChart(barProfile),
 		                    	driver.Domain.addLineChart(lineProfile),
 		                    	driver.Domain.addBarChart(barProfile),
 		                    	driver.Domain.addLineChart(lineProfile),
-								driver.Domain.addPieChart(pieProfile)};
-		                    	
-		//Publish the Dashboard
+					driver.Domain.addPieChart(pieProfile)};
+```
+### Publish the Dashboard
+```
 		driver.Domain.publishDashboard(elementQueue, stage);
 	}
 }
-'''
+```
